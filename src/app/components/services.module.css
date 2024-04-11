@@ -1,0 +1,49 @@
+.title {
+  padding: 40px;
+  background-color: #1a2b6d;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+}
+
+.list {
+  padding: 20px 0 0 0;
+}
+
+.image_wrapper {
+  height: 30vh;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .title {
+    font-size: 56px;
+    padding: 50px;
+  }
+
+  .list {
+    padding: 40px 50px 40px 50px;
+    flex-grow: 1;
+  }
+
+  .image_wrapper {
+    margin-left: auto;
+    height: 100%;
+    width: 30vw;
+    height: 38vw;
+  }
+}

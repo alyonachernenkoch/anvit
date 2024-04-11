@@ -1,0 +1,101 @@
+.header {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 15px 30px 15px 30px;
+  border-radius: 20px;
+  font-size: 17px;
+  background-color: transparent;
+  border-color: #1a2b6d;
+  color: #1a2b6d;
+  border-width: 1px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: #1a2b6d;
+  color: white;
+}
+
+.navigation {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+.menu_item {
+  padding: 10px 20px 10px 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.menu_item:hover {
+  background-color: #1a2b6d;
+}
+
+.menu_item:hover .menu_item_link {
+  color: white;
+}
+
+.menu_item:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.menu_item_link {
+  font-weight: 500;
+  color: #1a2b6d;
+}
+
+.phones {
+  display: none;
+}
+
+.phone:first-child {
+  margin-right: 30px;
+}
+
+.menu_button {
+  background-color: transparent;
+  border: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    flex-direction: row-reverse;
+    align-items: center;
+    z-index: 11111;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .phones {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu_button {
+    display: none;
+  }
+
+  .button {
+    padding: 15px 50px 15px 50px;
+    font-weight: 700;
+  }
+}

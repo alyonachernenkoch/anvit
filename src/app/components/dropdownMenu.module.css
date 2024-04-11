@@ -1,0 +1,45 @@
+.menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+
+  padding: 50px 20px 20px 20px;
+
+  position: fixed;
+  top: 0;
+  transition:
+    left 500ms ease-out,
+    opacity 500ms ease-out;
+
+  box-sizing: border-box;
+}
+
+.closeButton {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: transparent;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.phones {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu_open {
+  left: 0;
+  opacity: 1;
+}
+
+.menu_close {
+  left: -100%;
+  opacity: 0;
+}

@@ -1,0 +1,25 @@
+.title {
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #1A2B6D;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.item_title {
+  margin-bottom: 7px;
+  font-size: 20px;
+  color: #1A2B6D;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-right: 50px;
+  }
+  .title {
+    font-size: 56px;
+    margin-bottom: 50px;
+  }
+}
